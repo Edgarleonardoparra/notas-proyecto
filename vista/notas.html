@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas App</title>
+    <link rel="stylesheet" href="recursos/CCS/estilos.css">
+</head>
+<body>
+    <h1>Aplicación de Notas</h1>
+    <section>
+        <h2>Crear Nueva Nota</h2>
+        <form id="form-create">
+            <input type="text" id="titulo" placeholder="Título" required />
+            <textarea id="contenido" placeholder="Contenido"></textarea>
+            <button type="submit">Crear Nota</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Lista de Notas</h2>
+        <ul id="lista-notas"></ul>
+    </section>
+
+    <section>
+        <h2>Actualizar Nota</h2>
+        <form id="form-update">
+            <input type="text" id="idNota" placeholder="ID de la Nota" required />
+            <input type="text" id="nuevoTitulo" placeholder="Nuevo Título" required />
+            <textarea id="nuevoContenido" placeholder="Nuevo Contenido"></textarea>
+            <button type="submit">Actualizar Nota</button>
+        </form>
+    </section>
+
+    <script src="recursos/JS/validaciones.js"></script>
+</body>
+</html>

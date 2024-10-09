@@ -5,6 +5,9 @@ const notasRutas = require('./controlador/RutasNotas');
 
 const app = express();
 
+// Configurar archivos estáticos
+app.use(express.static('vista'));
+
 // Conectar a MongoDB Atlas
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Conectado a MongoDB Atlas'))
